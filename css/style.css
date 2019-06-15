@@ -1,0 +1,69 @@
+:root {
+  --yellow: #fdd205;
+  --purple: #6d2e98;
+  --dark: #231f20;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1500 - 300)));
+  /* font-size: calc(1vw + 1vh + .5vmin); */
+  font-family: Nunito Sans, sans-serif;
+  line-height: 1.4;
+  background-color: #fff;
+  color: var(--dark);
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  padding: 2rem 4rem 1rem;
+}
+
+  figcaption small {
+    background-color: var(--yellow);
+    white-space: nowrap;
+  }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* filter: grayscale(1); */
+}
+
+  /* img:hover {
+    filter: grayscale(0);
+  } */
+
+a {
+  color: var(--purple);
+}
+
+.page-wrap {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding: 3rem 4rem;
+}
+
+@media (max-width: 40rem) {
+  header {
+    padding: 1rem 2rem;
+  }
+}
+
+section + section {
+  margin-top: 4rem;
+}

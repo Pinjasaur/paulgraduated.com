@@ -9,45 +9,75 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,900&amp;display=swap">
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8">
-  <style>
-  body {
-    font-family: Nunito Sans, sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  img {
-    display: block;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-  }
-
-  ul {
-    list-style-type: square;
-  }
-
-  p + ul {
-    margin-top: 0;
-  }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <h1>Hang tight!</h1>
+  <div class="page-wrap">
 
-  <img src="img/headshot.jpg" alt="the man himself">
-  <p>Paul is working <em>feverishly</em> to get this up. (dev)</p>
+  <header>
+    <h1>Hi there.</h1>
+    <p>Glad to see you made it.</p>
+    <!-- <p>
+      I'm <a href="https://paulisaweso.me/" target="_blank" rel="noopener">Paul</a>
+      and this a little site providing additional details during my time through
+      undergrad.
+    </p> -->
+    <p>
+      I met some cool people during undergrad. Shoutout to Kristoff, Gary, Parker,
+      &amp; Richy for providing photos. Credited where&nbsp;applicable.
+    </p>
+  </header>
 
-  <p>In the mean time&hellip;</p>
-  <ul>
-    <li><a href="https://paul.af/" target="_blank" rel="noopener">read words</a></li>
-    <li><a href="https://unsplash.com/@pinjasaur" target="_blank" rel="noopener">look at photos</a></li>
-    <li><a href="https://github.com/Pinjasaur" target="_blank" rel="noopener">things Paul has made</a></li>
-  </ul>
+  <section>
+    <figure>
+      <img src="img/kristoff/snow.jpg" alt="snow storm aftermath">
+      <figcaption>
+        Kristoff &amp; I clearing off our cars following the worst snow storm
+        during my time there (2019). Kristoff&apos;s Subaru Legacy on the left
+        and my <a href="https://unsplash.com/photos/re7gGq2W2mg" target="_blank" rel="noopener">Subaru Outback</a>
+        on the right. Yes, I <em>do</em> use that bike rack (more on that later).
+        <small>Credit / Photographer: Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
 
+  <section>
+    <figure>
+      <img src="img/gary/paul+parker.jpg" alt="paul + parker at hungarian falls">
+      <figcaption>
+        Phew, that snow was overwhelming&mdash;let&apos;s switch seasons. An autumn
+        trip to nearby Hungarian Falls with Gary &amp; Parker.
+        <small>Credit / Photographer: Gary</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/gary/paul.jpg" alt="paul being mr. photographer">
+      <figcaption>
+        That same trip as above with me practicing my DSLR skills.
+        <small>Credit / Photographer: Gary</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/tech-trails.jpg" alt="braaaaaaap">
+      <figcaption>
+        Keeping with the autumn theme: Michigan Tech&apos;s trails. Taken fall
+        2018 featuring my 1998 Gary Fisher Joshua Z0 I bought off Kristoff for
+        $300. Not pictured: my friend who foolishly ran too low tire pressure
+        and flatted up the trail.
+        <small>Credit / Photographer: Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
