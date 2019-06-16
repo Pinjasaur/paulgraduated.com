@@ -18,17 +18,27 @@ html {
   background-color: #fff;
   color: var(--dark);
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 figure {
   margin: 0;
 }
 
+.dually {
+  display: flex;
+  flex-wrap: wrap;
+}
+  .dually img {
+    width: 50%;
+  }
+
 figcaption {
   padding: 2rem 4rem 1rem;
 }
 
   figcaption small {
+    padding: .25em;
     background-color: var(--yellow);
     white-space: nowrap;
   }
@@ -87,5 +97,13 @@ section + section {
 
   .pitstop {
     padding: 1rem;
+  }
+
+  figcaption small {
+    white-space: normal;
+    display: block;
+    padding: .5em;
+    margin-top: .5em;
+    text-align: center;
   }
 }
