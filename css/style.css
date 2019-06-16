@@ -33,6 +33,10 @@ figcaption {
     white-space: nowrap;
   }
 
+  figcaption small::before {
+    content: "Credit / Photographer: ";
+  }
+
 img {
   display: block;
   max-width: 100%;
@@ -58,12 +62,30 @@ header {
   padding: 3rem 4rem;
 }
 
+section + section {
+  margin-top: 4rem;
+}
+
+.pitstop {
+  padding: 1rem 4rem;
+  border-top: .25em dashed var(--purple);
+  border-bottom: .25em dashed var(--yellow);
+}
+
 @media (max-width: 40rem) {
   header {
     padding: 1rem 2rem;
   }
-}
 
-section + section {
-  margin-top: 4rem;
+  figcaption {
+    padding: 1rem 1rem .5rem;
+  }
+
+  section + section {
+    margin-top: 2rem;
+  }
+
+  .pitstop {
+    padding: 1rem;
+  }
 }
