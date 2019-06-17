@@ -2,6 +2,8 @@
   --yellow: #fdd205;
   --purple: #6d2e98;
   --dark: #231f20;
+  --light: #F7F7F7;
+  --skew-height: 3.5vw;
 }
 
 *,
@@ -15,7 +17,7 @@ html {
   /* font-size: calc(1vw + 1vh + .5vmin); */
   font-family: Nunito Sans, sans-serif;
   line-height: 1.4;
-  background-color: #fff;
+  background-color: var(--light);
   color: var(--dark);
   box-sizing: border-box;
   overflow-x: hidden;
@@ -62,6 +64,10 @@ a {
   color: var(--purple);
 }
 
+ul {
+  list-style-type: square;
+}
+
 .page-wrap {
   max-width: 1500px;
   margin-left: auto;
@@ -82,6 +88,39 @@ section + section {
   border-bottom: .25em dashed var(--yellow);
 }
 
+.finish-line {
+  padding: 1rem 4rem 3rem;
+  border-top: .25em dashed var(--dark);
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: calc(3rem + var(--skew-height)) 1rem 4rem;
+  margin-top: 2rem;
+  clip-path: polygon(
+    0 0,
+    50% calc(0% + var(--skew-height)),
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+  footer a {
+    color: var(--light);
+  }
+
+  footer a:hover {
+    color: #ababab;
+  }
+
+  footer small {
+    font-size: 0.75rem;
+    opacity: 0.25;
+  }
+
 @media (max-width: 40rem) {
   header {
     padding: 1rem 2rem;
@@ -99,11 +138,35 @@ section + section {
     padding: 1rem;
   }
 
+  .finish-line {
+    padding: 1rem 2rem;
+  }
+
   figcaption small {
     white-space: normal;
     display: block;
     padding: .5em;
     margin-top: .5em;
     text-align: center;
+  }
+}
+
+/* Component: Heart(beat).
+   -------------------------------------------------------------------------- */
+.heart {
+  color: #f00;
+  animation: heartbeat 1.5s infinite;
+  display: inline-block;
+}
+
+@keyframes heartbeat {
+  0%, 20%, 50%, 80%, 100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.1);
   }
 }
