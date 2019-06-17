@@ -1,0 +1,184 @@
+:root {
+  --yellow: #fdd205;
+  --purple: #6d2e98;
+  --dark: #231f20;
+  --light: #F7F7F7;
+  --skew-height: 3.5vw;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1500 - 300)));
+  /* font-size: calc(1vw + 1vh + .5vmin); */
+  font-family: Nunito Sans, sans-serif;
+  line-height: 1.4;
+  background-color: var(--light);
+  color: var(--dark);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+.dually {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+  .dually img {
+    width: 50%;
+  }
+
+figcaption {
+  padding: 2rem 4rem 1rem;
+}
+
+  figcaption small {
+    padding: .25em;
+    background-color: var(--yellow);
+    white-space: nowrap;
+  }
+
+  figcaption small::before {
+    content: "Credit / Photographer: ";
+  }
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* filter: grayscale(1); */
+}
+
+  img.grayscale {
+    filter: grayscale(1);
+  }
+
+  /* img:hover {
+    filter: grayscale(0);
+  } */
+
+a {
+  color: var(--purple);
+}
+
+  a:hover {
+    text-decoration: none;
+  }
+
+ul {
+  list-style-type: square;
+}
+
+.page-wrap {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding: 3rem 4rem;
+}
+
+section + section {
+  margin-top: 4rem;
+}
+
+.pitstop {
+  padding: 1rem 4rem;
+  border-top: .25em dashed var(--purple);
+  border-bottom: .25em dashed var(--yellow);
+}
+
+.finish-line {
+  padding: 1rem 4rem 3rem;
+  border-top: .25em dashed var(--dark);
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: calc(3rem + var(--skew-height)) 1rem 4rem;
+  margin-top: 2rem;
+  clip-path: polygon(
+    0 0,
+    50% calc(0% + var(--skew-height)),
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+  footer a {
+    color: var(--light);
+  }
+
+  footer a:hover {
+    color: #ababab;
+  }
+
+  footer small {
+    font-size: 0.75rem;
+    opacity: 0.25;
+  }
+
+@media (max-width: 40rem) {
+  header {
+    padding: 1rem 2rem;
+  }
+
+  figcaption {
+    padding: 1rem 1rem .5rem;
+  }
+
+  section + section {
+    margin-top: 2rem;
+  }
+
+  .pitstop {
+    padding: 1rem;
+  }
+
+  .finish-line {
+    padding: 1rem 2rem;
+  }
+
+  figcaption small {
+    white-space: normal;
+    display: block;
+    padding: .5em;
+    margin-top: .5em;
+    text-align: center;
+  }
+}
+
+/* Component: Heart(beat).
+   -------------------------------------------------------------------------- */
+.heart {
+  color: #f00;
+  animation: heartbeat 1.5s infinite;
+  display: inline-block;
+}
+
+@keyframes heartbeat {
+  0%, 20%, 50%, 80%, 100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+}

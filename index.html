@@ -9,45 +9,430 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,900&amp;display=swap">
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8">
-  <style>
-  body {
-    font-family: Nunito Sans, sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  img {
-    display: block;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-  }
-
-  ul {
-    list-style-type: square;
-  }
-
-  p + ul {
-    margin-top: 0;
-  }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <h1>Hang tight!</h1>
+  <div class="page-wrap">
 
-  <img src="img/headshot.jpg" alt="the man himself">
-  <p>Paul is working <em>feverishly</em> to get this up.</p>
+  <header>
+    <h1>Hi there.</h1>
+    <p>Glad to see you made it.</p>
+    <!-- <p>
+      I'm <a href="https://paulisaweso.me/" target="_blank" rel="noopener">Paul</a>
+      and this a little site providing additional details during my time through
+      undergrad.
+    </p> -->
+    <p>
+      I met some cool people during undergrad. Shoutout to Kristoff, Gary, Parker,
+      Chris, Emily, &amp; Richy for providing photos. Credited where applicable.
+    </p>
+    <p>Without further ado, let&rsquo;s get started.</p>
+    <p>
+      <small><button id="grayscale">Toggle grayscale on all images</button> or press an image to toggle it</small>
+    </p>
+  </header>
 
-  <p>In the mean time&hellip;</p>
-  <ul>
-    <li><a href="https://paul.af/" target="_blank" rel="noopener">read words</a></li>
-    <li><a href="https://unsplash.com/@pinjasaur" target="_blank" rel="noopener">look at photos</a></li>
-    <li><a href="https://github.com/Pinjasaur" target="_blank" rel="noopener">things Paul has made</a></li>
-  </ul>
+  <section>
+    <figure>
+      <img src="img/kristoff/snow.jpg" alt="snow storm aftermath">
+      <figcaption>
+        Kristoff &amp; I clearing off our cars following the worst snow storm
+        during my time at Michigan Tech (2019). Kristoff&rsquo;s Subaru Legacy on
+        the left and my <a href="https://unsplash.com/photos/re7gGq2W2mg" target="_blank" rel="noopener">Subaru Outback</a>
+        on the right. Yes, I <em>do</em> use that bike rack (more on that later).
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
 
+  <section>
+    <figure>
+      <img src="img/gary/paul+parker.jpg" alt="paul + parker at hungarian falls">
+      <figcaption>
+        Phew, that snow was overwhelming&mdash;let&rsquo;s switch seasons. An autumn
+        trip to nearby Hungarian Falls with Gary &amp; Parker during 2016.
+        <small>Gary</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/gary/paul.jpg" alt="paul being mr. photographer">
+      <figcaption>
+        That same trip as above with me practicing my DSLR skills.
+        <small>Gary</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/tech-trails.jpg" alt="braaaaaaap">
+      <figcaption>
+        Keeping with the autumn theme: Michigan Tech&rsquo;s trails. Taken fall
+        2018 featuring my 1998 Gary Fisher Joshua Z0 I bought off Kristoff for
+        $300. Not pictured: my friend who foolishly ran too low tire pressure
+        and flatted up the trail.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/subaru+lotus.jpg" alt="not-my-subaru next to not-my-lotus">
+      <figcaption>
+        Let&rsquo;s mix it up a bit. I snapped this photo of not-my-Subaru parked
+        next to not-my-Lotus in Ferndale, MI.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/parker/mcclain.jpg" alt="a young paul">
+      <figcaption>
+        A young Paul shooting sunset photographs at McClain State Park between
+        Hancock and Calumet, MI.
+        <small>Parker</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/kristoff/smash-burgers-with-parker.jpg" alt="smash burgers with me, kristoff, &amp; parker">
+      <figcaption>
+        Ah, here&rsquo;s an excellent one. Parker came to visit during my last
+        semester so we (me, Kristoff, and Parker) made smash burgers. Potato buns,
+        carmelized onions, a mix of potato and sweet potato fries coupled with
+        80/20 ground beef (or Beyond&trade; patties) is a recipe for success.
+        Not pictured: lots of smoke that really should&rsquo;ve set off the alarms.
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="pitstop">
+    <h2>🚧 🛑 Pit stop #1</h2>
+    <p>
+      Congrats on making it this far&mdash;that&rsquo;s no small feat.
+    </p>
+    <p>
+      Friendly reminder to stretch your legs, grab another cup of caffeine, and
+      sit back and enjoy the show.
+    </p>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/kristoff/bike-rack.jpg" alt="bike rack in use">
+      <figcaption>
+        See, I <em>told you</em> I use the bike rack. Kristoff &amp; I picked up
+        rental fat bikes in Calumet, MI to go riding at the nearby Swedetown
+        trails.
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/kristoff/paul-on-bike.jpg" alt="paul on a bike in the winter">
+      <figcaption>
+        More proof I (sometimes) bike in the winter. This photo was on an early
+        revision of the graduation announcements that didn&rsquo;t make the cut.
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/brockway.jpg" alt="my subaru outback on brockway mountain in copper harbor, mi">
+      <figcaption>
+        My Subaru Outback on Brockway Mountain in Copper Harbor, MI on a foggy
+        morning. Taken fall 2018 while I was up there doing radio communications
+        for a downhill and cross-country bike event.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/stevens-point.jpg" alt="enjoying a latte in stevens point, wi">
+      <figcaption>
+        Enjoying a latte at a cafe in Stevens Point, WI.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/curve.jpg" alt="can you curve a zero?">
+      <figcaption>
+        Can you curve a zero? This collaboration on a whiteboard in one of the
+        engineering buildings at Michigan Tech argues otherwise.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/kristoff/rosetta.jpg" alt="kristoff &amp; I at cafe rosetta in calumet, mi">
+      <figcaption>
+        I spend <em>a lot</em> of time at coffee shops &amp; cafes. One of my
+        favorites is Cafe Rosetta in Calumet, MI. This photograph features
+        Kristoff &amp; I doing some finals week &ldquo;studying.&rdquo; Take note of my
+        Patagucci&trade; sweater and REI vest.
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/kristoff/paul.jpg" alt="paul in the winter wearing orange sunglasses">
+      <figcaption>
+        Another winter biking outing with Kristoff. Take note of Kristoff&rsquo;s
+        finger AKA the blurry blob o&rsquo; doom.
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/parker/bled-fest.jpg" alt="parker &amp; I at bled fest 2019 in hartland, mi">
+      <figcaption>
+        Parker &amp; I at <a href="https://www.bledfest.com/" target="_blank" rel="noopener">BLED FEST</a> 2019 in Hartland, MI.
+        <small>Parker</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/swedetown.jpg" alt="a solo trip to the swedetown trails">
+      <figcaption>
+        A solo trip to the Swedetown trails near Calumet, MI. Featuring my
+        newly-acquired (at the time) <a href="https://paul.af/framed-minnesota-ltd" target="_blank" rel="noopener">Framed Minnesota LTD</a> fat bike.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="pitstop">
+    <h2>🚧 🛑 Pit stop #2</h2>
+    <p>
+      You know the drill at this point. Over half way done.
+    </p>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/kristoff/smash-burgers.jpg" alt="another round of smash burgers, this time just Kristoff &amp; I">
+      <figcaption>
+        Another round of smash burgers. This time a joint effort between Kristoff
+        &amp; I. One of the last meals we cooked together&mdash;a last supper of
+        sorts.
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/kristoff/korean-pancakes.jpg" alt="cooking korean pancakes">
+      <figcaption>
+        Cooking korean pancakes while on an internship in metro-Detroit.
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure class="dually">
+      <img src="img/me/ale-mary.jpg" alt="my POV at ale mary's in royal oak, mi">
+      <img src="img/kristoff/ale-mary.jpg" alt="kristoff's POV at ale mary's in royal oak, mi">
+      <figcaption>
+        Kristoff &amp; I got decadent <em>vegan</em> milkshakes at Ale Mary&rsquo;s
+        in Royal Oak, MI. Yes, they&rsquo;re as expensive as they look.
+        <small>Me (left), Kristoff (right)</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/swedetown-selfie2.jpg" alt="selfie at swedetown trails post-ride">
+      <figcaption>
+        A selfie at Swedetown trails after a frigid winter ride.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/fleche.jpg" alt="a snack break during la fleche du nord 2019">
+      <figcaption>
+        The longest bike ride I&rsquo;ve done to date was in May 2019 just after
+        graduating: La Fl&egrave;che Du Nord 2019. ~70 miles of riding with ~30
+        miles of gravel/dirt/sand promised from Houghton to Copper Harbor, MI.
+        I briefly <a href="https://paul.af/70-miles-on-a-fat-bike" target="_blank" rel="noopener">wrote about it</a>.
+        Not pictured: my 2L hydration pack &amp; tired legs.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure class="dually">
+      <img src="img/kristoff/mqt.jpg" alt="kristoff's POV at the marquette south trails">
+      <img src="img/me/mqt.jpg" alt="my POV at the marquette south trails">
+      <figcaption>
+        Another winter biking adventure with Kristoff. This time at the Marquette
+        South Trails.
+        <small>Kristoff (left), Me (right)</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/churning-rapids.jpg" alt="my subaru outback encased in the sunsetting rays at the churning rapids trailhead">
+      <figcaption>
+        Another winter photo! I tried out the groomed singletrack at Churning
+        Rapids (near Hancock, MI) this past winter (2019). After I got back,
+        the sun was setting on my Subaru Outback.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/kristoff/fl4t.jpg" alt="the (subaru) world is flat">
+      <figcaption>
+        More Subaru! Picking up a TV stand for cheap at a thrift store as the
+        sun was low in the horizon led to this. <em>something something head
+        gaskets</em>, am I right?
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/ecstasy.jpg" alt="cartoon ecstasy drawing on a whiteboard">
+      <figcaption>
+        Another humorous whiteboard drawing. This time courtesy of the Computer
+        Science dept. at Michigan Tech.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/guan-desk.jpg" alt="my desk at an internship: laptop, keyboard, headphones, fidget spinner, and rubber ducky">
+      <figcaption>
+        My desk at an internship. Take note of the legit rubber ducky and fidget
+        spinner.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/paul+will.jpg" alt="paul + will at a bubble tea shop in ferndale, mi">
+      <figcaption>
+        Me and a cool guy named Will at a bubble tea shop in Ferndale, MI.
+        <small>Emily #1</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/uncommon-hacks-desk.jpg" alt="my desk at uncommon hacks 2019 in chicago, il">
+      <figcaption>
+        I had the opportunity to attend and organize several hackathons throughout
+        undergrad. The one featured in this photo is Uncommon Hacks 2019 in
+        Chicago, IL. I did the Houghton to Chicago drive overnight&mdash; it&rsquo;s
+        a pretty easy 7 hours.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/kit.jpg" alt="I'm sure this slide means something">
+      <figcaption>
+        A slide from one of my favorite profs in undergrad: Kit Cischke. Yeah,
+        it&rsquo;s supposed to be cryptic.
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/me/lc3.jpg" alt="a snap from another favorite coffee shop: north perk">
+      <figcaption>
+        Another coffee shop I frequent often is North Perk (now Lake Charlevoix
+        Coffee Company).
+        <small>Me</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <figure>
+      <img src="img/kristoff/mn-ltd.gif" alt="me riding my framed minnesota ltd fat bike">
+      <figcaption>
+        Immediately after unpacking and assembling the <a href="https://paul.af/framed-minnesota-ltd" target="_blank" rel="noopener">Framed Minnesota LTD</a> fat
+        bike I was out behind the apartment finessing the fine details and bedding
+        the brakes.
+        <small>Kristoff</small>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- section>figure>img+figc -->
+
+  <section class="finish-line">
+    <h2>🏁 🎉 Finish line</h2>
+    <p>Congrats on making it to the end.</p>
+    <p>If you liked this&hellip;</p>
+    <ul>
+      <li><a href="https://paul.af/" target="_blank" rel="noopener">read Paul&rsquo;s words</a></li>
+      <li><a href="https://unsplash.com/@pinjasaur" target="_blank" rel="noopener">look at Paul&rsquo;s photos</a></li>
+      <li><a href="https://github.com/Pinjasaur" target="_blank" rel="noopener">things Paul has made</a></li>
+      <li><a href="https://paulisaweso.me/" target="_blank" rel="noopener">Paul&rsquo;s other site</a></li>
+    </ul>
+  </section>
+
+  </div>
+
+  <footer>
+    <p>
+      Built with <span class="heart">&#9825;</span> by <a href="https://paulisaweso.me" target="_blank" rel="noopener">Paul</a>.
+    </p>
+    <small>
+      Don&rsquo;t drink &amp; derive.
+    </small>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
